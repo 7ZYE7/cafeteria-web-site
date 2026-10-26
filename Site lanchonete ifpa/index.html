@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Café Aurora: cafés especiais e doces artesanais.">
+    <title>Cafeteria IFPA | Um café, mil momentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="#inicio" class="logo">
+            <img src="if logo.webp" alt="Logo do IFPA">
+            <span>Cafeteria IFPA</span>
+        </a>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#agendamento">Agendar pedido</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo">
+                <span class="subtitulo">CAFÉ FRESCO, MOMENTOS ESPECIAIS</span>
+                <h1>Seu dia merece<br>um café especial.</h1>
+                <p>
+                    Mais do que café, oferecemos um lugar para
+                    desacelerar, conversar e aproveitar os pequenos
+                    prazeres da vida.
+                </p>
+                <a href="#cardapio" class="botao">
+                    Conheça nosso cardápio
+                </a>
+            </div>
+            <div class="hero-imagem" role="img" aria-label="Café preparado artesanalmente"></div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="sobre secao" id="sobre">
+            <div class="sobre-imagem" role="img" aria-label="Interior aconchegante de uma cafeteria"></div>
+            <div class="sobre-conteudo">
+                <span class="subtitulo">NOSSA HISTÓRIA</span>
+                <h2>Feito com carinho,<br>servido com amor.</h2>
+                <p>
+                    A cafeteria do IFPA nasceu da paixão pelo café e da
+                    vontade de criar um espaço acolhedor para todos.
+                </p>
+                <p>
+                    Selecionamos nossos grãos com cuidado e
+                    preparamos cada bebida para tornar seu dia
+                    um pouco mais especial.
+                </p>
+                <a href="#contato" class="link">
+                    Venha nos conhecer →
+                </a>
+            </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section class="cardapio secao" id="cardapio">
+            <div class="titulo-secao">
+                <span class="subtitulo">SABORES QUE ENCANTAM</span>
+                <h2>Nosso cardápio</h2>
+                <p>Encontre seu novo favorito.</p>
+            </div>
+            <div class="produtos">
+                <article class="produto">
+                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80" alt="Xícara de café espresso">
+                    <div class="produto-info">
+                        <h3>Espresso Aurora</h3>
+                        <p>Café intenso, aromático e encorpado.</p>
+                        <span class="preco">R$ 7,00</span>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Cappuccino cremoso">
+                    <div class="produto-info">
+                        <h3>Cappuccino Cremoso</h3>
+                        <p>Espresso, leite vaporizado e espuma.</p>
+                        <span class="preco">R$ 12,00</span>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Pães e doces artesanais">
+                    <div class="produto-info">
+                        <h3>Doce da Casa</h3>
+                        <p>Uma delícia artesanal para acompanhar.</p>
+                        <span class="preco">R$ 9,00</span>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://t4.ftcdn.net/jpg/12/91/22/61/360_F_1291226145_NbMfwkA6lpfIn1JGHViWWcgsh2qH6WFW.jpg" alt="Pão de queijo">
+                    <div class="produto-info">
+                        <h3>Pão de queijo</h3>
+                        <p>Um pão delicioso e suculento</p>
+                        <span class="preco">R$ 3,00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section class="diferenciais secao">
+            <div class="titulo-secao">
+                <span class="subtitulo">POR QUE NOS ESCOLHER?</span>
+                <h2>Pequenos detalhes, grandes momentos.</h2>
+            </div>
+            <div class="beneficios">
+                <div class="beneficio">
+                    <span>☕</span>
+                    <h3>Café de qualidade</h3>
+                    <p>Grãos selecionados e preparo cuidadoso.</p>
+                </div>
+
+                <div class="beneficio">
+                    <span>🥐</span>
+                    <h3>Feito com carinho</h3>
+                    <p>Sabores preparados para surpreender.</p>
+                </div>
+                
+                <div class="beneficio">
+                    <span>♡</span>
+                    <h3>Ambiente acolhedor</h3>
+                    <p>Seu cantinho para relaxar e aproveitar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGENDAMENTO -->
+        <section class="agendamento secao" id="agendamento">
+            <div class="titulo-secao">
+                <span class="subtitulo">SEU PEDIDO, NO SEU TEMPO</span>
+                <h2>Agende seu pedido</h2>
+                <p>Escolha o produto e o melhor horário para retirar.</p>
+            </div>
+            
+            <form id="formAgendamento">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                
+                <label for="produto">Produto:</label>
+                <select id="produto" required>
+                    <option value="">Escolha um produto</option>
+                    <option value="Espresso Aurora" data-preco="7">Espresso Aurora - R$ 7,00</option>
+                    <option value="Cappuccino Cremoso" data-preco="12">Cappuccino Cremoso - R$ 12,00</option>
+                    <option value="Doce da Casa" data-preco="9">Doce da Casa - R$ 9,00</option>
+                    <option value="Pão de Queijo" data-preco="3">Pão de Queijo - R$ 3,00</option>
+                </select>
+                
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" min="1" max="20" value="1" required>
+                
+                <label for="data">Data da retirada:</label>
+                <input type="date" id="data" required>
+                
+                <label for="horario">Horário:</label>
+                <select id="horario" required>
+                    <option value="">Escolha um horário</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+                
+                <button type="submit" class="botao">
+                    Confirmar agendamento
+                </button>
+                
+                <p class="aviso">
+                    Projeto demonstrativo: pedido não enviado à cafeteria.
+                </p>
+            </form>
+            
+            <div id="resultado" class="resultado" hidden></div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contato secao" id="contato">
+            <span class="subtitulo">VAMOS TOMAR UM CAFÉ?</span>
+            <h2>Esperamos por você!</h2>
+            <p>
+                Venha sentir o aroma do café fresquinho e conhecer
+                nosso espaço.
+            </p>
+
+            <div class="contato-detalhes">
+                <p><strong>Endereço:</strong> Folha 22, Quadra Especial, Lote Especial II, Bairro Nova Marabá, Marabá - PA</p>
+                <p><strong>Horário:</strong> Segunda a sexta, das 8h às 18h</p>
+                <p><strong>E-mail:</strong> contato@cafeifpa.com</p>
+            </div>
+            
+            <a class="botao botao-claro" href="mailto:contato@cafeifpa.com">
+                Entre em contato
+            </a>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <a href="#inicio" class="logo">☕ Cafeteria IFPA</a>
+        <p>Um café, mil momentos.</p>
+        <p>&copy; 2026 Cafeteria IFPA. Projeto demonstrativo.</p>
+    </footer>
+</body>
+</html>

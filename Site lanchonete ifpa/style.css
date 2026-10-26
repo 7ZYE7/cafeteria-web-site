@@ -1,0 +1,478 @@
+/* CONFIGURAÇÕES GERAIS */
+/* Foram alteradas as cores do Site para um estilo similar ao site do Campus CMI com cores verdes */
+:root {
+    --verde-principal: #245C43;
+    --verde-natural: #6F9B7B;
+    --verde-pastel: #DCEBDD;
+    --creme: #F7F8F2;
+    --bege: #D8C5A5;
+    --branco: #FFFFFF;
+    --texto: #35483B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--creme);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.secao {
+    padding: 90px 8%;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    min-height: 82px;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background: var(--creme);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--verde-principal);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--verde-natural);
+}
+
+/* APRESENTAÇÃO */
+.hero {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--verde-pastel);
+}
+
+.hero-conteudo {
+    padding: 90px 8% 90px 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subtitulo {
+    display: block;
+    color: var(--verde-principal);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--verde-principal);
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.12;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    max-width: 440px;
+    margin-bottom: 30px;
+}
+
+.hero-imagem {
+    min-height: 420px;
+    background-image: url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 25px;
+    background: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background: #194631;
+    transform: translateY(-2px);
+}
+
+/* SOBRE */
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.sobre-imagem {
+    min-height: 420px;
+    border-radius: 8px;
+    background-image: url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre h2,
+.titulo-secao h2,
+.contato h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--verde-principal);
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    margin-bottom: 16px;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--verde-principal);
+    font-weight: bold;
+}
+
+/* CARDÁPIO */
+.cardapio {
+    background: var(--verde-pastel);
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-secao p {
+    margin-top: 8px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.produto {
+    overflow: hidden;
+    border-radius: 9px;
+    background: var(--branco);
+    box-shadow: 0 5px 20px rgba(36, 92, 67, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(36, 92, 67, 0.13);
+}
+
+.produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 22px;
+}
+
+.produto h3 {
+    color: var(--verde-principal);
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.produto-info p {
+    font-size: 14px;
+    min-height: 48px;
+}
+
+.preco {
+    display: block;
+    margin-top: 14px;
+    color: var(--verde-principal);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* DIFERENCIAIS */
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficio {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.beneficio span {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.beneficio h3 {
+    color: var(--verde-principal);
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    font-size: 14px;
+}
+
+/* AGENDAMENTO */
+.agendamento {
+    background: #EAF1E8;
+}
+
+#formAgendamento {
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background: var(--branco);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(36, 92, 67, 0.1);
+}
+
+#formAgendamento label {
+    font-weight: bold;
+    color: var(--verde-principal);
+    margin-top: 8px;
+}
+
+#formAgendamento input,
+#formAgendamento select {
+    padding: 12px;
+    border: 1px solid #C5D8C7;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    background: var(--branco);
+    color: var(--texto);
+}
+
+#formAgendamento input:focus,
+#formAgendamento select:focus {
+    outline: 2px solid var(--verde-natural);
+}
+
+#formAgendamento button {
+    margin-top: 15px;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #657568;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.resultado {
+    max-width: 500px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background: var(--branco);
+    border-left: 5px solid var(--verde-natural);
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.resultado h3 {
+    color: var(--verde-principal);
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    margin: 6px 0;
+}
+
+/* CONTATO */
+.contato {
+    text-align: center;
+    background: var(--verde-principal);
+    color: var(--creme);
+}
+
+.contato .subtitulo {
+    color: var(--verde-pastel);
+}
+
+.contato h2 {
+    color: var(--branco);
+}
+
+.contato > p {
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+.contato-detalhes {
+    margin-bottom: 28px;
+}
+
+.contato-detalhes p {
+    margin-bottom: 7px;
+}
+
+.botao-claro {
+    background: var(--creme);
+    color: var(--verde-principal);
+}
+
+.botao-claro:hover {
+    background: var(--verde-pastel);
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 35px 8%;
+    text-align: center;
+    background: #193D2D;
+    color: #E1EDE2;
+}
+
+.rodape .logo {
+    display: inline-flex;
+    color: var(--creme);
+    margin-bottom: 8px;
+}
+
+.rodape p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+    
+    .menu {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+    
+    .hero-conteudo {
+        padding: 60px 8%;
+    }
+    
+    .sobre {
+        gap: 30px;
+    }
+    
+    .produtos {
+        gap: 16px;
+    }
+    
+    .produto-info {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .secao {
+        padding: 60px 6%;
+    }
+    
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-conteudo {
+        padding: 65px 7%;
+    }
+    
+    .hero-imagem {
+        min-height: 300px;
+    }
+    
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+    
+    .sobre-imagem {
+        min-height: 300px;
+    }
+    
+    .produtos,
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+    
+    .produto img {
+        height: 250px;
+    }
+    
+    .beneficio {
+        padding: 15px;
+    }
+    
+    #formAgendamento {
+        padding: 18px;
+    }
+    
+    .contato-detalhes {
+        overflow-wrap: anywhere;
+    }
+}
